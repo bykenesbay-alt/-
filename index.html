@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Точечный массаж и гирудотерапия от доктора Гульмиры Сарсенбековны. Натуральные методы оздоровления и лечения.">
+    <meta name="keywords" content="точечный массаж, лечебный массаж, гирудотерапия, оздоровление, доктор Гульмира Сарсенбековна">
+    <title>Доктор Гульмира Сарсенбековна | Точечный массаж и гирудотерапия</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-video {
+            height: 70vh;
+            min-height: 400px;
+        }
+        .instagram-media {
+            background: #FFF;
+            border: 0;
+            border-radius: 3px;
+            box-shadow: 0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
+            margin: 1px;
+            max-width: 540px;
+            min-width: 326px;
+            padding: 0;
+            width: 99.375%;
+            width: -webkit-calc(100% - 2px);
+            width: calc(100% - 2px);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #8B786D;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .active-link:after {
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .hero-video {
+                height: 50vh;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/logo.jpg" alt="Логотип доктора Гульмиры" class="h-12 w-12 rounded-full mr-3">
+                <h1 class="text-xl md:text-2xl font-serif text-gray-800">Доктор Гульмира Сарсенбековна</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link active-link text-gray-800 hover:text-amber-800">Главная</a>
+                <a href="#about" class="nav-link text-gray-800 hover:text-amber-800">О докторе</a>
+                <a href="#services" class="nav-link text-gray-800 hover:text-amber-800">Услуги</a>
+                <a href="#blog" class="nav-link text-gray-800 hover:text-amber-800">Блог</a>
+                <a href="#contact" class="nav-link text-gray-800 hover:text-amber-800">Контакты</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-800 hover:text-amber-800">Главная</a>
+            <a href="#about" class="block py-2 text-gray-800 hover:text-amber-800">О докторе</a>
+            <a href="#services" class="block py-2 text-gray-800 hover:text-amber-800">Услуги</a>
+            <a href="#blog" class="block py-2 text-gray-800 hover:text-amber-800">Блог</a>
+            <a href="#contact" class="block py-2 text-gray-800 hover:text-amber-800">Контакты</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative">
+        <div class="hero-video bg-amber-50 flex items-center justify-center">
+            <div class="container mx-auto px-4 text-center z-10">
+                <h1 class="text-3xl md:text-5xl font-serif text-gray-800 mb-4">Точечный массаж для здоровья и долголетия</h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">Натуральные методы оздоровления, проверенные веками. Восстановите баланс организма без медикаментов.</p>
+                <a href="#contact" class="bg-amber-700 hover:bg-amber-800 text-white px-8 py-3 rounded-full font-medium transition duration-300 inline-block">Записаться на прием</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="images/doctor-photo.jpg" alt="Доктор Гульмира Сарсенбековна" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-serif text-gray-800 mb-6">О докторе</h2>
+                    <p class="text-gray-700 mb-4">Гульмира Сарсенбековна — сертифицированный специалист по точечному массажу и гирудотерапии с 15-летним опытом работы.</p>
+                    <p class="text-gray-700 mb-4">Окончила Казахский национальный медицинский университет им. С.Д. Асфендиярова, прошла обучение у мастеров традиционной восточной медицины в Китае и Корее.</p>
+                    <p class="text-gray-700 mb-6">В своей практике сочетает древние техники массажа с современными знаниями анатомии и физиологии, что позволяет достигать впечатляющих результатов в лечении и профилактике различных заболеваний.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-amber-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-amber-800 mb-2">15+ лет</h3>
+                            <p class="text-gray-700 text-sm">Опыта в точечном массаже</p>
+                        </div>
+                        <div class="bg-amber-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-amber-800 mb-2">5000+</h3>
+                            <p class="text-gray-700 text-sm">Довольных пациентов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-serif text-center text-gray-800 mb-12">Услуги</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-hands text-amber-700 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-800">Точечный массаж</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">Точечный массаж (акупрессура) — это древняя методика воздействия на биологически активные точки организма для восстановления энергетического баланса и лечения различных заболеваний.</p>
+                    <p class="text-gray-700 mb-6">Показания:</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-6 space-y-2">
+                        <li>Заболевания опорно-двигательного аппарата</li>
+                        <li>Головные боли, мигрени</li>
+                        <li>Стресс, бессонница, хроническая усталость</li>
+                        <li>Проблемы с пищеварением</li>
+                        <li>Нарушения работы дыхательной системы</li>
+                    </ul>
+                    <div class="flex justify-between items-center">
+                        <span class="text-amber-800 font-medium">от 5 000 ₸</span>
+                        <a href="#contact" class="text-amber-700 hover:text-amber-800 font-medium">Записаться →</a>
+                    </div>
+                </div>
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-leaf text-amber-700 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-800">Гирудотерапия</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">Гирудотерапия — лечение медицинскими пиявками, которое улучшает микроциркуляцию крови, снимает воспаление и способствует общему оздоровлению организма.</p>
+                    <p class="text-gray-700 mb-6">Показания:</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-6 space-y-2">
+                        <li>Варикозное расширение вен</li>
+                        <li>Гипертония</li>
+                        <li>Артриты и артрозы</li>
+                        <li>Кожные заболевания</li>
+                        <li>Гинекологические проблемы</li>
+                    </ul>
+                    <div class="flex justify-between items-center">
+                        <span class="text-amber-800 font-medium">от 7 000 ₸</span>
+                        <a href="#contact" class="text-amber-700 hover:text-amber-800 font-medium">Записаться →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-serif text-center text-gray-800 mb-12">Отзывы пациентов</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="images/client1.jpg" alt="Фото пациента" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-medium">Алия Н.</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"После курса точечного массажа у доктора Гульмиры полностью прошли хронические боли в спине, которые мучили меня больше 5 лет. Очень благодарна за профессионализм и внимательное отношение!"</p>
+                </div>
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="images/client2.jpg" alt="Фото пациента" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-medium">Ерлан К.</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Гирудотерапия помогла мне справиться с гипертонией, которая не поддавалась обычному лечению. После 5 сеансов давление стабилизировалось, улучшилось общее самочувствие. Доктор Гульмира — настоящий профессионал!"</p>
+                </div>
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="images/client3.jpg" alt="Фото пациента" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-medium">Мадина С.</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Точечный массаж у Гульмиры Сарсенбековны помог мне избавиться от постоянных мигреней. После первого же сеанса почувствовала облегчение. Очень рекомендую всем, кто устал от таблеток и ищет натуральные методы лечения."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Social Media Section -->
+    <section id="social" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-serif text-center text-gray-800 mb-12">Последние публикации</h2>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-medium text-center mb-4">Instagram</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <div class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CdrjlhQKzXy/"></div>
+                        <div class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CdrjlhQKzXy/"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium text-center mb-4">TikTok</h3>
+                    <div class="flex justify-center">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@dr.gulmira_sarsenbekovna" data-embed-from="embed_page"></blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-8">
+                <a href="https://www.instagram.com/dr.gulmira_sarsenbekovna" target="_blank" class="inline-flex items-center text-amber-700 hover:text-amber-800 font-medium text-lg">
+                    <i class="fab fa-instagram mr-2 text-2xl"></i> Instagram
+                </a>
+                <a href="https://www.tiktok.com/@dr.gulmira_sarsenbekovna" target="_blank" class="inline-flex items-center text-amber-700 hover:text-amber-800 font-medium text-lg">
+                    <i class="fab fa-tiktok mr-2 text-2xl"></i> TikTok
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-serif text-gray-800 mb-6">Свяжитесь со мной</h2>
+            <p class="text-gray-700 mb-8 max-w-2xl mx-auto">Для записи на прием или консультации напишите мне в WhatsApp</p>
+            
+            <a href="https://wa.me/77778874427" class="inline-block bg-green-600 hover:bg-green-700 text-white text-lg font-medium py-4 px-8 rounded-full transition duration-300 mb-8">
+                <i class="fab fa-whatsapp mr-2"></i> Написать в WhatsApp
+            </a>
+            
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://www.instagram.com/dr.gulmira_sarsenbekovna" target="_blank" class="text-gray-700 hover:text-amber-700 text-2xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@dr.gulmira_sarsenbekovna" target="_blank" class="text-gray-700 hover:text-amber-700 text-2xl">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            
+            <div class="text-gray-600 text-sm">
+                <p>Телефон: +7 777 887 4427</p>
+                <p class="mt-2">Часы работы: Пн-Пт 9:00-18:00, Сб 10:00-15:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <img src="images/logo.jpg" alt="Логотип доктора Гульмиры" class="h-10 w-10 rounded-full mr-3">
+                        <h2 class="text-xl font-serif">Доктор Гульмира Сарсенбековна</h2>
+                    </div>
+                    <p class="text-gray-400 mt-2 text-sm">Точечный массаж и гирудотерапия для вашего здоровья</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://www.instagram.com/dr.gulmira_sarsenbekovna" target="_blank" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" target="_blank" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" target="_blank" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-tiktok text-xl"></i>
+                        </a>
+                        <a href="https://youtube.com/@dr.gulmira_sarsenbekovna" target="_blank" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm">© 2023 Доктор Гульмира Сарсенбековна. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Мобильное меню
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Закрываем мобильное меню после клика
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Обработка формы
+        document.getElementById('appointment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Здесь должна быть логика отправки формы на сервер
+            // Для демонстрации просто показываем сообщение об успехе
+            document.getElementById('form-success').classList.remove('hidden');
+            this.reset();
+            setTimeout(() => {
+                document.getElementById('form-success').classList.add('hidden');
+            }, 5000);
+        });
+
+        // Загрузка социальных медиа
+        function loadSocialMedia() {
+            // Instagram
+            const instagramScript = document.createElement('script');
+            instagramScript.src = 'https://www.instagram.com/embed.js';
+            instagramScript.async = true;
+            document.body.appendChild(instagramScript);
+            
+            // TikTok
+            const tiktokScript = document.createElement('script');
+            tiktokScript.src = 'https://www.tiktok.com/embed.js';
+            tiktokScript.async = true;
+            document.body.appendChild(tiktokScript);
+        }
+
+        // Загрузка скриптов после загрузки страницы
+        window.addEventListener('load', loadSocialMedia);
+
+        // Подсветка активного пункта меню при скролле
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 300) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active-link');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active-link');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
